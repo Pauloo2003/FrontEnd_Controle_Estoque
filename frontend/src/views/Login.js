@@ -52,9 +52,7 @@ const Login = () => {
               <CardTitle tag="h2" className="fw-bold mb-1">
                 Controle de Sistema
               </CardTitle>
-              <CardText className="mb-2">
-                Please sign-in to your account and start the adventure
-              </CardText>
+              
               <Form
                   className="auth-login-form mt-2"
                   onSubmit={(e) => e.preventDefault()}
@@ -73,10 +71,10 @@ const Login = () => {
                 <div className="mb-1">
                   <div className="d-flex justify-content-between">
                     <Label className="form-label" for="login-password">
-                      Password
+                      Senha
                     </Label>
                     <Link to="/forgot-password">
-                      <small>Forgot Password?</small>
+                      <small>Esqueceu sua senha?</small>
                     </Link>
                   </div>
                   <InputPasswordToggle
@@ -94,7 +92,7 @@ const Login = () => {
                   Sign in
                 </Button>
               </Form>
-              <p className="text-center mt-2">
+              {/* <p className="text-center mt-2">
                 <span className="me-25">New on our platform?</span>
                 <Link to="/register">
                   <span>Create an account</span>
@@ -116,7 +114,7 @@ const Login = () => {
                 <Button className="me-0" color="github">
                   <GitHub size={14} />
                 </Button>
-              </div>
+              </div> */}
             </Col>
           </Col>
         </Row>
